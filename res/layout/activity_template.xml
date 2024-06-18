@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".Template_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="30dp"
+            android:text="Travel Plan\nTemplate"
+            android:textSize="22sp"
+            android:textColor="@color/dark_green"
+            android:fontFamily="@font/poppins_reg"/>
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/template"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Make your life easier with our plan template"
+            android:textSize="14sp"
+            android:textColor="@color/dark_green"
+            android:fontFamily="@font/poppins_reg"/>
+
+
+        <TextView
+            android:id="@+id/quote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quote"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Take a look on\nour avalaible template "
+            android:textSize="14sp"
+            android:textColor="@color/dark_green"
+            android:fontFamily="@font/poppins_reg"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BandungCV"
+            android:layout_width="150dp"
+            android:layout_below="@id/quote2"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_rowWeight="0"
+            android:layout_column="1"
+            android:layout_columnWeight="0"
+            android:layout_gravity="left"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="goToFarmhouse"
+            android:background="@null"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/light_green"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/BandungImage"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/bandungimg"
+
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/BandungTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/poppins_reg"
+                    android:text="Farmhouse"
+                    android:textAlignment="inherit"
+                    android:textColor="@color/dark_green"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pinpointIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_rr_marker"
+
+                        ></ImageView>
+
+                    <TextView
+                        android:id="@+id/WestJavaTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+
+                        android:fontFamily="@font/poppins_reg"
+                        android:text="Lembang"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/NusaPenida"
+            android:layout_width="150dp"
+            android:layout_below="@id/quote2"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_rowWeight="0"
+            android:layout_column="1"
+            android:layout_columnWeight="0"
+            android:layout_gravity="left"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="220dp"
+            android:background="@null"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@color/light_green"
+            app:cardCornerRadius="20dp"
+            android:onClick="goToBillabongl">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/NusaPenidaImage"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/nusapenidaimg"
+
+                    ></ImageView>
+
+                <TextView
+                    android:id="@+id/NusaPenidaTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/poppins_reg"
+                    android:text="Billabong’s Angel"
+                    android:textAlignment="inherit"
+                    android:textColor="@color/dark_green"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/pinpointIcon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_rr_marker"
+
+                        ></ImageView>
+
+                    <TextView
+                        android:id="@+id/NusaPenidaTV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+
+                        android:fontFamily="@font/poppins_reg"
+                        android:text="Nusa Peninda Bali"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            app:menu="@menu/bottom_nav_home"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            tools:ignore="MissingConstraints">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
+</LinearLayout>

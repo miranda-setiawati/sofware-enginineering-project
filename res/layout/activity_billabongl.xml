@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".Farmhouse_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="30dp"
+                android:text="Farmhouse Trip"
+                android:textSize="22sp"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trip"
+                android:layout_marginLeft="30dp"
+                android:text="Lembang"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+                android:id="@+id/calender"
+                android:layout_width="306dp"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/place"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_calender">
+
+            </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+            <TextView
+                android:id="@+id/clock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="08.30"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <TextView
+                android:id="@+id/clock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="09.00"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/luggange"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08.30 - 9.00 (30 min)"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/checkin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check in Hotel"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="47dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Angkal Resort"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="#6A101F"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="63dp"
+                android:layout_marginLeft="140dp"/>
+
+
+            <TextView
+                android:id="@+id/clock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="09.00"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <TextView
+                android:id="@+id/clock4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock3"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="10.00"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/roomservice"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09.00 - 10.00 (1 hour)"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/morning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Breakfast"
+                android:textStyle="bold"
+                android:layout_below="@id/calender"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Angkal Resort"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="#6A101F"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="148dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/clock5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock4"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="10.00"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <TextView
+                android:id="@+id/clock6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock5"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="10.10"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/signout"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="165dp"/>
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.00 - 10.10 (10 min)"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/leaving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leaving Hotel"
+                android:textStyle="bold"
+                android:layout_below="@id/calender"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_marginTop="214dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Angkal Resort"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="#6A101F"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="228dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/clock7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock6"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="10.10"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <TextView
+                android:id="@+id/clock8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock7"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="11.10"
+                android:textColor="@color/dark_green"
+                android:fontFamily="@font/poppins_reg"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="250dp"/>
+
+            <TextView
+                android:id="@+id/time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.10 - 11.10 (1 hour)"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="280dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/ontheway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On the way to Angel’s Billabongl"
+                android:textStyle="bold"
+                android:layout_below="@id/calender"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="@color/dark_green"
+                android:layout_marginTop="294dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Road"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_reg"
+                android:textColor="#6A101F"
+                android:layout_below="@id/calender"
+                android:layout_marginTop="308dp"
+                android:layout_marginLeft="140dp"/>
+
+            <TextView
+                android:id="@+id/clock9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock8"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="11.10"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/clock10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock9"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="12.10"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="335dp"
+                android:src="@drawable/terrace" />
+
+            <TextView
+                android:id="@+id/time5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="370dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="11.10 - 12.10 (1 hour)"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/ontheways"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="384dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Arrival and Explore !"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="398dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Angel’s Billabong"
+                android:textColor="#6A101F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="11.10"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/clock12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock11"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="13.30"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="423dp"
+                android:src="@drawable/roomservice"/>
+
+            <TextView
+                android:id="@+id/time6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="458dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="11.10 - 13.30 (1 hour 20 minutes)"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="472dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Lunch"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="486dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Angel’s Billabong"
+                android:textColor="#6A101F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock12"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="13.30"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/clock14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock13"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.30"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="510dp"
+                android:src="@drawable/terrace" />
+
+            <TextView
+                android:id="@+id/time7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="550dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="13.30 - 15.30 (2 hour)"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/continues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="564dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Continue Exploring"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="578dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Angel’s Billabong"
+                android:textColor="#6A101F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock14"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.30"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/clock16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock15"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.40"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="597dp"
+                android:src="@drawable/signout" />
+
+            <TextView
+                android:id="@+id/time8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="633dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.30 - 15.40 (10 min)"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/leavingfarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="647dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Leaving"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="661dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Billabong’s Angel"
+                android:textColor="#6A101F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock16"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.40"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/clock18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock17"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="17.00"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clock1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="684dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:id="@+id/time9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="720dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="15.40 - 17.00 (1 hour 20 min)"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/backhotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="734dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Back to Hotel"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calender"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="747dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Road"
+                android:textColor="#6A101F"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            app:menu="@menu/bottom_nav_home"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            tools:ignore="MissingConstraints">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

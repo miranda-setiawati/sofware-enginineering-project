@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".Wishlist_activitiy">
+
+    <TextView
+        android:id="@+id/template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="30dp"
+        android:text="Your Wishlist"
+        android:textSize="22sp"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/poppins_reg"/>
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/template"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Places you wish to visit"
+        android:textSize="14sp"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/poppins_reg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quote"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        app:menu="@menu/bottom_nav_home"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

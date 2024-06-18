@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".CreateItinerary_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Trip"
+            android:fontFamily="@font/poppins_reg"
+            android:textSize="22sp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/dark_green"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:layout_marginLeft="30dp"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:onClick="goToOverview"
+            android:fontFamily="@font/poppins_reg"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_green"
+            android:layout_below="@id/title"/>
+
+        <TextView
+            android:id="@+id/itinerary"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/save_button"
+            android:fontFamily="@font/poppins_reg"
+            android:text="Itinerary"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_green"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/todolist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/n_light"
+            android:fontFamily="@font/poppins_reg"
+            android:minHeight="48dp"
+            android:onClick="goToItinerary2"
+            android:text="To-do List"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_green"
+            android:textSize="12sp"/>
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="48dp"
+            android:background="@drawable/save_button"
+            android:layout_marginTop="63dp"
+            android:layout_marginLeft="285dp"
+            android:text="Save"
+            android:fontFamily="@font/poppins_reg"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overview"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Select date"
+            android:textColor="@color/dark_green"
+            android:fontFamily="@font/poppins_reg" />
+
+        <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+            android:id="@+id/calender"
+            android:layout_width="306dp"
+            android:layout_height="310dp"
+            android:layout_below="@id/selectDate"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_calender">
+
+        </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calender"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Next"
+            android:background="@drawable/template_button"/>
+
+        <Button
+            android:id="@+id/buttoncalender"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calender"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/template_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Use template"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            app:menu="@menu/bottom_nav_home"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            tools:ignore="MissingConstraints">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

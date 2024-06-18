@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/n_light"
+    tools:context=".Home_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:id="@+id/ImageLogo"
+                android:layout_width="184dp"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="26dp" />
+
+            <TextView
+                android:id="@+id/introTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/poppins_reg"
+                android:lineHeight="27dp"
+                android:text="Hi, Dina!\nLet’s explore Indonesia\nwith Mooli Journey!"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/GivingRecs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_marginLeft="32dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Not sure? We have recommendations!"
+                android:textColor="@color/dark_green" />
+
+            <ImageView
+                android:id="@+id/ImageProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="139dp"
+                android:src="@drawable/imageprofile" />
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="257dp"
+                android:background="@drawable/save_button"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_below="@id/GivingRecs"
+                android:paddingStart="26dp"
+                android:paddingEnd="26dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/buttomNavigation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            app:menu="@menu/bottom_nav_home"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

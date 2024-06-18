@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="@color/light_green"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/destinationImage"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bandungimg" />
+
+        <TextView
+            android:id="@+id/destinationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_reg"
+            android:text="Destination Name"
+            android:textColor="@color/dark_green"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/pinpointIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fi_rr_marker" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/poppins_reg"
+                android:text="Location"
+                android:textColor="@color/dark_green"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- ImageButton for favorite -->
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/heartlike" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

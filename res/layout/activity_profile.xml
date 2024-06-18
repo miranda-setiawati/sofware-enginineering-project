@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".Profile_activity">
+
+    <TextView
+        android:id="@+id/Hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="30dp"
+        android:text="Hello, Dina!"
+        android:textSize="22sp"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/poppins_reg"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="340dp"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/imageprofile" />
+
+    <ImageView
+        android:layout_below="@id/profile"
+        android:id="@+id/pinpointIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/fi_rr_marker"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/gading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelapa Gading, North Jakarta"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/poppins_reg"
+        android:textSize="12sp"
+        android:layout_below="@id/profile"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="130dp"/>
+
+    <TextView
+        android:id="@+id/feature"
+        android:layout_below="@id/gading"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/save_button"
+        android:text="0\nFeature trips"
+        android:textColor="@color/dark_green"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_below="@id/gading"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/save_button"
+        android:text="0\nWishlist Destinations"
+        android:textColor="@color/dark_green"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_below="@id/feature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="Your trip history"
+        android:textSize="18sp"
+        android:textColor="@color/dark_green"
+        android:fontFamily="@font/poppins_reg"/>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttomNavigation5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        app:menu="@menu/bottom_nav_home"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/n_light"
+    tools:context=".CreateItinerary2_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Trip"
+                android:fontFamily="@font/poppins_reg"
+                android:textSize="22sp"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/dark_green"/>
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goToOverview"
+                android:text="Overview"
+                android:layout_marginLeft="30dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_reg"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dark_green"
+                android:layout_below="@id/title"/>
+
+            <TextView
+                android:id="@+id/itinerary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/n_light"
+                android:fontFamily="@font/poppins_reg"
+                android:minHeight="48dp"
+                android:onClick="goToItinerary"
+                android:text="Itinerary"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_green"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/todolist"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save_button"
+                android:fontFamily="@font/poppins_reg"
+                android:text="To-do List"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_green"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_button"
+                android:layout_marginTop="63dp"
+                android:layout_marginLeft="285dp"
+                android:text="Save"
+                android:fontFamily="@font/poppins_reg"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_green"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/swimming"
+                android:layout_width="327dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/overview"
+                android:layout_marginTop="34dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#66A5AA88"
+                android:outlineSpotShadowColor="@color/n_light">
+                
+                <TextView
+                    android:id="@+id/swimmingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swimming with whale sharks"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="50dp" />
+
+                <CheckBox
+                    android:id="@+id/swimmingCH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:buttonTint="@color/light_green"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bananawidget"
+                android:layout_width="327dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/swimming"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#66A5AA88"
+                android:outlineSpotShadowColor="@color/n_light">
+
+                <TextView
+                    android:id="@+id/bananatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banana Boat"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="99dp" />
+
+                <CheckBox
+                    android:id="@+id/bananaCH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:buttonTint="@color/light_green"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seasidewidget"
+                android:layout_width="327dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/bananawidget"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#66A5AA88"
+                android:outlineSpotShadowColor="@color/n_light">
+
+                <TextView
+                    android:id="@+id/seasidetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seaside yoga class"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="79dp" />
+
+                <CheckBox
+                    android:id="@+id/seasideCH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:buttonTint="@color/light_green"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/scubawidget"
+                android:layout_width="327dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/seasidewidget"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#66A5AA88"
+                android:outlineSpotShadowColor="@color/n_light">
+
+                <TextView
+                    android:id="@+id/scubatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scuba diving"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="98dp" />
+
+                <CheckBox
+                    android:id="@+id/scubaCH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:buttonTint="@color/light_green"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_background"
+                app:menu="@menu/bottom_nav_home"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                tools:ignore="MissingConstraints">
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
